@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Car Insurance App</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo-car-isurance.png" />
+    <link rel="stylesheet" href="/all-pages/owner/owner-style.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="/img/logo-car-isurance.png" alt="logo-image" />
+      <nav>
+        <ul>
+          <li><a href="/all-pages/owner/owner.html">Home</a></li>
+          <li><a href="/all-pages/owner/owner.html">Owners</a></li>
+          <li><a href="/all-pages/car/car.html">Cars</a></li>
+          <li><a href="/all-pages/insurance/insurance.html">Insurance</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Add new person</h1>
+
+      <form>
+        <div class="form-field grid-column-span-2">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" />
+        </div>
+
+        <div class="form-field grid-column-span-2">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" />
+        </div>
+
+        <div class="form-field grid-column-span-2">
+          <label for="CNP">CNP</label>
+          <input type="text" id="cnp" />
+        </div>
+
+        <div class="form-field">
+          <label for="birth-date">Birth Date</label>
+          <input type="date" id="birth-date" />
+        </div>
+
+        <div class="form-field">
+          <label for="gender">Gender</label>
+          <select id="gender">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Rather not say</option>
+          </select>
+        </div>
+
+        <div class="action-buttons">
+          <button type="submit">Add person</button>
+          <button type="reset">Reset values</button>
+        </div>
+
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>

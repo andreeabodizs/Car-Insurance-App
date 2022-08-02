@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Car Insurance App</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo-car-isurance.png" />
+    <link rel="stylesheet" href="/all-pages/insurance/insurance-style.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="/img/logo-car-isurance.png" alt="logo-image" />
+
+      <nav>
+        <ul>
+          <li><a href="/all-pages/owner/owner.html">Home</a></li>
+          <li><a href="/all-pages/owner/owner.html">Owners</a></li>
+          <li><a href="/all-pages/car/car.html">Cars</a></li>
+          <li><a href="/all-pages/insurance/insurance.html">Insurance</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Add new insurance</h1>
+
+      <form>
+        <div class="form-field">
+          <label for="company">Company</label>
+          <input type="text" id="company" />
+        </div>
+
+        <div class="form-field">
+          <label for="person-id">Person Id</label>
+          <select id="person-id">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="car-id">Car Id</label>
+          <select id="car-id">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="price">Price</label>
+          <input type="number" id="price" />
+        </div>
+
+        <div class="form-field grid-row-span-2">
+          <fieldset>
+            <legend>Payment type</legend>
+
+            <div class="radio-field">
+              <label for="paypal">PayPal</label>
+              <input type="radio" name="payment-type" id="paypal" />
+            </div>
+
+            <div class="radio-field">
+              <label for="card">Credit card / Debit card</label>
+              <input type="radio" name="payment-type" id="card" />
+            </div>
+
+            <div class="radio-field">
+              <label for="cash">Cash</label>
+              <input type="radio" name="payment-type" id="cash" />
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="form-field">
+          <label for="start-date">Start Date</label>
+          <input type="date" id="start-date" />
+        </div>
+
+        <div class="form-field">
+          <label for="end-date">End Date</label>
+          <input type="date" id="end-date" />
+        </div>
+
+        <div class="form-field">
+          <fieldset>
+            <legend>Direct pay</legend>
+            
+            <div class="checkbox-field">
+              <label for="direct-pay-yes">Yes</label>
+              <input
+                type="checkbox"
+                name="payment-type"
+                id="direct-pay-yes"
+                checked
+              />
+            </div>
+
+            <div class="checkbox-field">
+              <label for="direct-pay-no">No</label>
+              <input type="checkbox" name="payment-type" id="direct-pay-no" />
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="form-field">
+          <label for="notes">Notes</label>
+          <textarea type="text" id="notes"></textarea>
+        </div>
+
+        <div class="action-buttons">
+          <button type="submit">Add car</button>
+          <button type="reset">Reset values</button>
+        </div>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>

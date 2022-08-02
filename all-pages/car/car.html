@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Car Insurance App</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo-car-isurance.png" />
+    <link rel="stylesheet" href="/all-pages/car/car-style.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="/img/logo-car-isurance.png" alt="logo-image" />
+      <nav>
+        <ul>
+          <li><a href="/all-pages/owner/owner.html">Home</a></li>
+          <li><a href="/all-pages/owner/owner.html">Owners</a></li>
+          <li><a href="/all-pages/car/car.html">Cars</a></li>
+          <li><a href="/all-pages/insurance/insurance.html">Insurance</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Add new car</h1>
+      <form>
+        <div class="form-field">
+          <label for="brand">Brand</label>
+          <input type="text" id="brand" />
+        </div>
+
+        <div class="form-field">
+          <label for="model">Model</label>
+          <input type="text" id="model" />
+        </div>
+
+        <div class="form-field">
+          <label for="cubic-capacity">Cubic Capacity</label>
+          <input type="number" id="cubic-capacity" />
+        </div>
+
+        <div class="form-field">
+          <label for="serial-number">Serial Number</label>
+          <input type="text" id="serial-number" />
+        </div>
+
+        <div class="form-field">
+          <label for="car-type">Car Type</label>
+          <select id="car-type">
+            <option>Sedan</option>
+            <option>Break</option>
+            <option>SUV</option>
+            <option>Coupe</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="plates">Plates</label>
+          <input type="text" id="plates" />
+        </div>
+
+        <div class="form-field grid-column-span-2">
+          <fieldset>
+            <legend>Fuel Type</legend>
+            <div class="radio-field">
+              <label for="gasoline">Gasoline</label>
+              <input type="radio" name="fuel-type" id="gasoline" />
+            </div>
+            <div class="radio-field">
+              <label for="diesel">Diesel</label>
+              <input type="radio" name="fuel-type" id="diesel" />
+            </div>
+            <div class="radio-field">
+              <label for="bio-diesel">Bio Diesel</label>
+              <input type="radio" name="fuel-type" id="bio-diesel" />
+            </div>
+            <div class="radio-field">
+              <label for="ethanol">Ethanol</label>
+              <input type="radio" name="fuel-type" id="ethanol" />
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="form-field">
+          <label for="owner-id">Owner Id</label>
+          <select id="owner-id">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+        </div>
+
+        <div class="action-buttons">
+          <button type="submit">Add car</button>
+          <button type="reset">Reset values</button>
+        </div>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>
